@@ -3,6 +3,7 @@ import {Button, Col, message, Row, Upload} from 'antd';
 import {InboxOutlined} from '@ant-design/icons';
 import 'antd/dist/antd.css';
 import axios from "axios";
+import {KmpTest} from "../kmpTest";
 
 const {Dragger} = Upload;
 
@@ -82,6 +83,11 @@ export class Compress extends Component {
                 <Row justify="center" align="middle">
                     <Col offset={3} span={6}>
                         <Button disabled={this.state.downloadPath === ""} onClick={this.downLoad}> 点击下载 </Button>
+                    </Col>
+                </Row>
+                <Row justify="center" align="middle">
+                    <Col offset={0} span={12}>
+                        <KmpTest/>
                     </Col>
                 </Row>
             </>
